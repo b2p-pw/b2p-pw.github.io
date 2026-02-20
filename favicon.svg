@@ -1,0 +1,38 @@
+<svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="yellow-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFBAB;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FDE047;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="full-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 1   0 0 0 0 0.8   0 0 0 0 0  0 0 0 0.6 0" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#full-glow)">
+    <path d="M155 20 L80 125 H120 L90 230 L185 105 H135 L155 20Z" 
+          fill="url(#yellow-grad)" />
+  </g>
+
+  <text x="50%" y="135" 
+        dominant-baseline="middle" 
+        text-anchor="middle" 
+        font-family="system-ui, sans-serif" 
+        font-weight="950" 
+        font-size="72" 
+        fill="#000000"
+        stroke="#FFFFFF"
+        stroke-width="6"
+        paint-order="stroke"
+        letter-spacing="-5px"
+        style="filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.4));">
+    b2p
+  </text>
+</svg>
