@@ -1,0 +1,48 @@
+/* SIDEBAR */
+nav.sidebar {
+  width: 85px;
+  min-width: 85px; /* Impede que a sidebar diminua */
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  border-right: 1px solid var(--edge-shadow);
+  user-select: none;
+  view-transition-name: main-sidebar;
+}
+
+/* ÁREA PRINCIPAL */
+main.content {
+  flex: 1;
+  padding: 60px 10%;
+  overflow-y: auto; /* Permite scroll apenas no conteúdo */
+  view-transition-name: main-sidebar;
+}
+
+header.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+header.content-header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+/* GRID DE CARDS */
+.grid-system {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.sidebar a[href^="/my"] {
+  margin-top: auto;
+  margin-bottom: 20px; /* Um espacinho do fundo da tela */
+}

@@ -1,0 +1,40 @@
+:root {
+  --bg: #ececdb;
+  --edge-highlight: #ffffff;
+  --edge-shadow: #d6d6c4;
+  --accent: #fcd34d;
+  --text: #2d2d2a;
+  --text-light: #9a9a90;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.1s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  margin: 0;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  display: flex; /* Garante que a Sidebar e o Main fiquem lado a lado */
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Isso avisa ao navegador para animar a troca entre arquivos HTML diferentes */
+@view-transition {
+  navigation: auto;
+}
+
+/* Opcional: Para tornar a transição mais suave e evitar o "flash" branco */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.3s;
+}
+
+a {
+  text-decoration: none; /* Remove sublinhado de todos os links */
+  color: inherit;
+}

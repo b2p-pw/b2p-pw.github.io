@@ -1,22 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 | Binary-2-Path</title>
-    <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/main.css">
-  </head>
-  <body>
-    <h1 class="main-title">
-      <a href="/">
-        <img src="/assets/img/b2p/logo.svg" alt="Binary-2-Path Logo" width="50" height="50">
-      </a>
-      Binary-2-Path
-    </h1>
-    <p>
-      Page Not Found<br>
-      <a href="/">Return to Home</a>
-    </p>
-  </body>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Não Encontrado | b2p</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/img/b2p/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Reutilizando seus estilos -->
+  <link rel="stylesheet" href="/assets/css/theme.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+
+  <style>
+    .error-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+      text-align: center;
+    }
+
+    .error-code {
+      font-size: 120px;
+      font-weight: 900;
+      letter-spacing: -5px;
+      color: var(--edge-shadow); /* Cor de baixo contraste para parecer "vazio" */
+      position: relative;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .error-code::after {
+      content: '404';
+      position: absolute;
+      left: 4px;
+      top: 4px;
+      color: var(--accent); /* O amarelo brilha no erro */
+      z-index: -1;
+    }
+
+    .error-message {
+      max-width: 400px;
+    }
+
+    .error-message h2 {
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .error-message p {
+      color: var(--text-light);
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    
+  </style>
+</head>
+<body class="app-container">
+
+  <!-- Mantemos a sidebar para o usuário não se sentir perdido -->
+  <nav class="sidebar">
+    <a class="nav-item" href="/" title="Início">🏠</a>
+    <a class="nav-item" href="/packages/" title="Pacotes">📦</a>
+    <a class="nav-item" href="/bundles/" title="Bundles">🎒</a>
+    <a class="nav-item" href="/categories/" title="Categorias">🗂️</a>
+    <a class="nav-item" href="/tags/" title="Tags">🏷️</a>
+    <a class="nav-item" href="/my-b2p/" title="Meu b2p">⚡</a>
+  </nav>
+
+  <main class="content">
+    <div class="error-container">
+      <div class="error-code">404</div>
+      
+      <div class="error-message">
+        <h2>Caminho não encontrado</h2>
+        <p>O pacote ou a página que você está tentando acessar não foi mapeado no repositório local.</p>
+        
+        <a href="/" class="btn-return">
+          <button class="btn-power">Voltar ao Início</button>
+        </a>
+      </div>
+    </div>
+  </main>
+
+</body>
 </html>

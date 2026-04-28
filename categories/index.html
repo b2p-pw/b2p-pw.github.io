@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Power Store | b2p</title>
+  <title>Categorias | b2p</title>
   <link rel="icon" type="image/svg+xml" href="/assets/img/b2p/favicon.svg">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
   
@@ -14,58 +14,44 @@
 <body>
 
   <nav class="sidebar">
-    <a class="nav-item active" href="/" title="Início">🏠</a>
+    <a class="nav-item" href="/" title="Início">🏠</a>
     <a class="nav-item" href="/packages/" title="Pacotes">📦</a>
     <a class="nav-item" href="/bundles/" title="Bundles">🎒</a>
-    <a class="nav-item" href="/categories/" title="Categorias">🗂️</a>
+    <a class="nav-item active" href="/categories/" title="Categorias">🗂️</a>
     <a class="nav-item" href="/tags/" title="Tags">🏷️</a>
     <a class="nav-item" href="/my-b2p/" title="Meu b2p">⚡</a>
   </nav>
 
   <main class="content">
     <header class="content-header">
-      <h1>b2p Power Store</h1>
+      <h1>b2p Categories</h1>
       <input type="text" class="input-technical" placeholder="Buscar na Power Store...">
     </header>
 
     <div class="grid-system">
-      <!-- Destaque: O Motor -->
       <div class="card-technical">
-        <a href="/package/?b2p" class="card-header-link">
-          <div class="icon-box">⚡</div>
+        <a href="/categorie/?development" class="card-header-link">
+          <div class="icon-box">🛠️</div>
           <div class="card-title">
-            <h3>Binary-2-Path</h3>
-            <p>O gerenciador de pacotes definitivo.</p>
+            <h3>Development</h3>
+            <p>Compiladores, IDEs e Linters.</p>
           </div>
         </a>
-        <button class="btn-ghost">Abrir</button>
+        <button class="btn-ghost">Explorar 42 pacotes</button>
       </div>
 
-      <!-- Destaque: Bundle Popular -->
       <div class="card-technical">
-        <a href="/bundle/?web-stack" class="card-header-link">
-          <div class="icon-box">🌐</div>
+        <a href="/categorie/?sysadmin" class="card-header-link">
+          <div class="icon-box">🖥️</div>
           <div class="card-title">
-            <h3>Web Dev Stack</h3>
-            <p>Pacote básico de ferramentas Web com Node.js.</p>
+            <h3>System Admin</h3>
+            <p>Redes, Logs e Monitoramento.</p>
           </div>
         </a>
-        <button class="btn-power">Instalar 5 Pacotes</button>
-      </div>
-
-      <!-- Destaque: Ferramenta Nova -->
-      <div class="card-technical">
-        <a href="/package/?idx-runner" class="card-header-link">
-          <div class="icon-box">🏃‍♂️</div>
-          <div class="card-title">
-            <h3>IDX Runner</h3>
-            <p>Executor seguro de scripts IDX.</p>
-          </div>
-        </a>
-        <button class="btn-power">Instalar</button>
+        <button class="btn-ghost">Explorar 15 pacotes</button>
       </div>
     </div>
-    
+
   </main>
 
 </body>
